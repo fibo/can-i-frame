@@ -1,0 +1,31 @@
+{
+  "name": "can-i-frame",
+  "version": "1.0.0",
+  "private": true,
+  "description": "check if a website can be included into an iframe",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "budo ${npm_package_main} --dir docs --serve bundle.js --open --live --pushstate -- -t babelify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fibo/can-i-frame.git"
+  },
+  "keywords": [
+    "iframe",
+    "security"
+  ],
+  "author": {
+    "name": "Gianluca Casati",
+    "url": "http://g14n.info"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fibo/can-i-frame/issues"
+  },
+  "homepage": "http://g14n.info/can-i-frame",
+  "dependencies": {
+    "zeroconf-redux": "^4.5.0"
+  }
+}

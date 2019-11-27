@@ -5,6 +5,7 @@
   "description": "check if a website can be included into an iframe",
   "main": "src/index.js",
   "scripts": {
+    "browserify": "cross-env NODE_ENV=production browserify src/index.js -t babelify -g [ envify --NODE_ENV production ] -g uglifyify | terser --compress --mangle > docs/bundle.js",
     "start": "budo ${npm_package_main} --dir docs --serve bundle.js --open --live --pushstate -- -t babelify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

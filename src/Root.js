@@ -4,17 +4,19 @@ export default function Root () {
   const [src, setSrc] = useState('')
 
   return (
-    <div>
-      <input
-        onBlur={(event) => {
-          setSrc(event.target.value)
-        }}
-        type='text'
-      />
+    <>
+      <nav>
+        <input
+          onBlur={(event) => {
+            setSrc(event.target.value)
+          }}
+          type='text'
+        />
+      </nav>
 
-      <div>
+      <div id='preview'>
         <iframe src={src} />
       </div>
-    </div>
+    </>
   )
 }

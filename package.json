@@ -26,6 +26,7 @@
   },
   "homepage": "http://g14n.info/can-i-frame",
   "dependencies": {
+    "classnames": "^2.2.6",
     "zeroconf-redux": "^5.3.0"
   }
 }
